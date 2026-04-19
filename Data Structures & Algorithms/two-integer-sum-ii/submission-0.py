@@ -7,7 +7,7 @@ class Solution:
 
       while left < right :
         if numbers[left] + numbers[right]  == target:
-         return [numbers[left] , numbers[right]]
+         return [numbers[left] , numbers[right]] # will return the value not the index we want 
         elif numbers[left] + numbers[right] > target:
             right -= 1
         elif numbers[left] + numbers[right] < target:
